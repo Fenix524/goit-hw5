@@ -128,7 +128,6 @@
             </p>
           </li>
         </ul>
-
       </div>
     </section>
 
@@ -424,7 +423,6 @@
       </p>
 
       <form class="modal-form" name="review-form">
-
         <div class="modal-form-field-box">
           <label for="user_name" class="modal-form-label">Name</label>
           <div class="modal-form-field">
@@ -462,13 +460,16 @@
             placeholder="Text input"></textarea>
         </div>
 
-        <label class="modal-form-agreement" for="">
-          <input class="modal-form-checkbox checkbox" type="checkbox" name="user_agreement" />
-          <span class="modal-form-checkbox-desc">
-            I accept the terms and conditions of the
-            <a href="" class="" target="_blank">Privacy Policy</a>
-          </span>
-        </label>
+        <div class="modal-form-agreement">
+          <input class="modal-form-checkbox checkbox visually-hidden" type="checkbox" name="user-privacy"
+            id="user-privacy" value="true" />
+          <label for="user-privacy" class="modal-form-label">
+            <span class="modal-form-checkbox-desc">
+              I accept the terms and conditions of the
+              <a href="" class="" target="_blank">Privacy Policy</a>
+            </span>
+          </label>
+        </div>
 
         <button class="modal-form-send-button btn" type="submit">Send</button>
       </form>
