@@ -753,14 +753,16 @@ section {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
+.modal-form-field-box{
+  margin-bottom: 8px;
+}
 .modal-form-label {
   color: #8e8f99;
   margin-bottom: 4px;
 }
 .modal-form-field {
   width: 100%;
-  position: relative;
-  margin-bottom: 8px;
+  position: relative;  
 }
 .modal-form-comment,
 .modal-form-input {
