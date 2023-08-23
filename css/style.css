@@ -170,7 +170,7 @@ section {
 
 .btn {
   display: block;
-  min-width: 169px;
+  min-width: 165px;
   line-height: 1.5;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
@@ -672,18 +672,18 @@ section {
 }
 .footer-subscribe-form {
   display: flex;
+  gap: 24px;
 }
 .footer-subscribe-form-input {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  margin-right: 24px;
 
   background-color: transparent;
   color: #fff;
   font-size: 12px;
 
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.48px;
 
   outline: transparent;
@@ -698,6 +698,7 @@ section {
   padding: 8px 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .footer-subscribe-form-btn-icon {
   fill: #fff;
