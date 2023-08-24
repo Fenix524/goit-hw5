@@ -164,8 +164,32 @@ section {
 }
 
 .checkbox {
-  height: 16px;
   width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: transparent;
+  color: transparent;
+  cursor: pointer;
+
+  transition: background-color var(--animation-way), border var(--animation-way),
+    fill var(--animation-way);
+}
+
+.checkbox > svg{
+  fill: currentColor;
+}
+
+input[type='checkbox']:checked + label > .checkbox {
+  background-color: var(--ocean, #404bbf);
+  stroke-width: 1px;
+  stroke: var(--ocean, #404bbf);
+  color: #fff;
 }
 
 .btn {
@@ -844,8 +868,13 @@ section {
 .modal-form-checkbox {
   margin-right: 8px;
 }
-.modal-form-checkbox-desc {
-  color: #8e8f99;
+.modal-form-custom-checkbox {
+  margin-right: 8px;
+}
+.user-privacy-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal-form-checkbox-desc a {
   color: #4d5ae5;
