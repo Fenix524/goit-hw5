@@ -195,7 +195,7 @@ input[type='checkbox']:checked + label > .checkbox {
 
 .btn {
   display: block;
-  min-width: 169px;
+  min-width: 165px;
   line-height: 1.5;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
@@ -842,6 +842,10 @@ input[type='checkbox']:checked + label > .checkbox {
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   background-color: transparent;
 
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+
   transition: border-color var(--animation-way);
 }
 .modal-form-input {
@@ -902,4 +906,5 @@ input[type='checkbox']:checked + label > .checkbox {
 }
 .modal-form-send-button {
   margin: 0 auto;
+  min-width: 169px;
 }
